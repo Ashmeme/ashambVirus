@@ -89,23 +89,6 @@ app.delete('/deletePage/:id', async (req, res) => {
 
 
 
-// app.delete('/todos/:id', async (req, res) => {
-//   const { id } = req.params;
-
-//   try {
-//     const todo = await Todo.findById(id);
-//     if (!todo) {
-//       res.status(404).json({ message: 'Page not found' });
-//       return;
-//     }
-
-//     await todo.remove();
-//     res.json({ message: 'Page deleted' });
-//   } catch (err) {
-//     res.status(500).json({ message: err.message });
-//   }
-// });
-
-app.listen(80, () => {
-  console.log('Server listening on port 80');
+app.listen(4000, () => {
+  console.log('Server listening on port 4000');
 });
